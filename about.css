@@ -1,0 +1,597 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+LANDING PAGE
+/* SECTION 1 STARTS HERE */
+.sec1 {
+  margin-top: 100px;
+}
+.sec1-p {
+  font-family: "Jost", sans-serif;
+  font-weight: 350;
+  font-size: 26px;
+  line-height: 100%;
+  color: #000;
+  word-spacing: 0px;
+}
+.sec1-h {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 100%;
+  color: #000;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+/* section2 starts here */
+/* sec2 typography  */
+.sec h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 100%;
+  color: #212121;
+}
+.sec2 .card-title {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #000;
+}
+.sec2 .card-text {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #000;
+}
+/* SECTION 2 STOPS HERE  */
+/* SECTION 3 STARTS HERE  */
+.sec3 h2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 100%;
+  color: #616161;
+}
+.sec3 h3 {
+  color: #212121;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 54px !important;
+  line-height: 100%;
+}
+.explore-p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  color: #424242;
+}
+/* SECTION 3 STOPS HERE  */
+/* SECTION 4 STARTS HERE  */
+/* rest for the sec4 typography  anchor tag */
+.sec4-tag {
+  text-decoration: none;
+  color: #333333;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 100%;
+  margin-bottom: 2px;
+}
+.sec4-tag:active,
+.sec4-tag:focus {
+  color: #000;
+  text-decoration: underline;
+}
+.sec4-tag:hover {
+  color: #828282;
+  text-decoration: none;
+}
+.sec4-a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+}
+.sec4-a:hover {
+  background-color: #d7000f;
+  color: #fff;
+}
+.sec4 .card-title {
+  font-family: "Nato Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #212121;
+  text-transform: uppercase;
+}
+.sec4 .card-text {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #19191d;
+}
+/* media query for mobile devices */
+/* SECTION 5 STARTS HERE */
+.sec5 .card-body {
+  font-family: "Jost", sans-serif;
+  width: 28vw;
+  height: 70vh;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  /* box-shadow: rgba(0, 0, 0, 0.07);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
+}
+.card-sec5 .d-flex {
+  background-color: #e0e0e0;
+  width: 22rem;
+  font-family: "Jost", sans-serif;
+}
+.card-sec5 span,
+.card-sec5 .fa-regular {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #424242;
+}
+
+.wade {
+  font-weight: 700 !important;
+  font-size: 20px !important;
+  line-height: 100% !important;
+  color: #212121 !important;
+}
+.sec5 h3 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 120%;
+  color: #212121;
+}
+.sec5 p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #424242;
+}
+
+/* styling for second carousel section here  */
+.blog-section .card-title {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 100%;
+  color: #212121;
+}
+.blog-section .card-text {
+  font-family: "Nato Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #424242;
+}
+/* blog2 styling starts here */
+.blog2-h {
+  font-family: "Nato Sans", sans-serif;
+  font-weight: 700;
+}
+.blog2-p {
+  font-family: "Nato Sans", sans-serif;
+  line-break: 100%;
+}
+.bold-image {
+  width: 100%;
+  overflow: hidden;
+}
+.bold-image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .sec1 {
+    margin-top: 50px;
+  }
+  .sec1-p {
+    font-weight: 350px;
+    font-size: 25px !important;
+    word-spacing: 0px;
+  }
+  .sec1-h {
+    font-weight: 500;
+    font-size: 28px !important;
+    word-spacing: 0px;
+    padding: 12px 0px;
+  }
+  .sec2 h2 {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    margin: 50px 0px !important;
+    word-spacing: 0px !important;
+  }
+  .sec3 h2 {
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    padding-top: 19px;
+    word-spacing: 0px !important;
+  }
+  .sec3 h3 {
+    font-size: 40px !important;
+    font-weight: 600 !important;
+    padding-top: 4px !important;
+  }
+  .sec3 br {
+    display: none !important;
+  }
+  .collection1 {
+    width: 98% !important;
+    height: 100% !important;
+  }
+  .collectionb {
+    width: 98% !important;
+    height: 100% !important;
+    margin-bottom: 30px !important;
+  }
+  .collection2,
+  .collection3,
+  .collectionb {
+    width: 98% !important;
+    height: 100% !important;
+    padding-bottom: 0px !important;
+  }
+  .sec4-tag {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    line-height: 100% !important;
+    padding-bottom: 3px !important;
+  }
+  /* section 5 media query  */
+  /* .sec5 .card-body{
+        padding: 0px 10px ;
+    } */
+  /* .sec5 .d-flex{
+        text-align: left;
+    } */
+  .sec5 .wf,
+  .sec5 h3,
+  .sec5 p {
+    padding: 0px 10px !important;
+  }
+  .sec5 .btn-tag {
+    margin-left: 10px;
+  }
+  .sec5 br {
+    display: none !important;
+  }
+  .card-sec5 .d-flex {
+    margin-top: 20px;
+    width: 74vw;
+  }
+  .wade {
+    font-size: 15px !important;
+  }
+  .sec5 .card-body {
+    width: 100%;
+    height: 63vh;
+  }
+  /* media query for blog2 section   */
+
+  .blog-section br {
+    display: none !important;
+  }
+  .blog-section .card-title {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    line-height: 100% !important;
+  }
+  .blog-section .card-text {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 100% !important;
+  }
+
+  #collectionImage {
+    width: 100% !important;
+    height: 100% !important;
+    padding-bottom: 0px !important;
+  }
+  .smallDev {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: left !important;
+  }
+  .BYC {
+    text-align: left !important;
+  }
+  .blog2-p .blog2-h {
+    margin-top: 1rem
+  }
+  .card-body a {
+    display: flex;        /* Makes the button a block element */
+    width: 100%;           /* Fills the card width */
+    padding: 9px;
+  }
+}
+
+/* ABOUT PAGE STYLING */
+.top {
+  text-align: center;
+  margin-top: 60px;
+  font-weight: 700;
+  font-family: "Jost", sans-serif;
+}
+.frame178 img {
+  width: 100%;
+}
+.aboutbyc {
+  margin-top: 10px;
+}
+/* .img-fluid {
+  width: 100%;
+} */
+.aboutbyc {
+  margin-top: 165px;
+  color: #212121;
+  font-family: "Noto+Sans", sans-serif;
+}
+.aboutbyc h3 {
+  font-weight: bold;
+  font-family: "Noto+Sans", sans-serif;
+}
+
+RECORDS STYLING .records {
+  text-align: center;
+  margin-top: 60px;
+  font-family: "Jost", sans-serif;
+}
+.records h1 {
+  text-align: center;
+  margin-top: 80px;
+}
+.card {
+  margin-top: 70px;
+}
+.card-body p {
+  font-size: 12px;
+  font-family: "Noto+Sans", sans-serif;
+}
+.card-hover {
+  border: none #bd3a3a0a;
+  background-color: #fbfbfb;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px 1px #fbfbfb;
+}
+.card-hover:hover {
+  background-color: #99363617;
+  cursor: pointer;
+}
+#record-years {
+  color: #d7000f;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+RECENTLY VIEWED .about-sec3 {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 10px;
+}
+.about-sec3 .card-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #19191d;
+  font-family: "Jost", sans-serif;
+}
+.text-p {
+  font-weight: 450 !important;
+  font-size: 20px;
+}
+/* .about-sec3 .text-p{
+} */
+.about-sec3 .men-fash {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 143%;
+  letter-spacing: 1.8%;
+  color: #787885;
+}
+.about-sec3 .price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: #000000de;
+  font-family: "Noto Sans", sans-serif;
+}
+.about-sec3 .rating {
+  font-family: "Roboto ", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 23%;
+  color: #5e6366;
+}
+
+ /* All products */
+ .cards-body {
+  border: none;
+  box-shadow: 2px 2px 2px 2px #0000000F;
+  padding: 8px;
+ }
+
+
+/* responsiveness */
+@media screen and (max-width: 600px) {
+  .pages-nav {
+    margin-top: 30px;
+  }
+  .card1 img {
+    width: 100%;
+  }
+  .aboutbyc {
+    margin-top: 30px;
+  }
+  .aboutbyc h3 {
+    font-weight: 600;
+    text-align: center;
+  }
+  .aboutbyc p {
+    text-align: justify;
+  }
+  .records {
+    margin-top: 30px;
+    font-weight: 700;
+  }
+  .record-cards {
+    margin-top: -60px;
+  }
+  .card-top img {
+    width: 100%;
+  }
+  .card {
+    margin-left: 25px;
+  }
+  .card-img-top img {
+    width: 100%;
+  }
+  .rate-figure {
+    margin-right: 12rem;
+  }
+
+     all products 
+  .card-aboutUs img {
+    width: 100%;
+  }
+}
+
+/* ipad responsiveness */
+@media screen and (max-width: 768px) {
+  .card-aboutUs img {
+    width: 100%;
+  }
+  .aboutbyc {
+    margin-top: 100px;
+  }
+  .aboutbyc h3 {
+    font-weight: 600;
+  }
+}
+
+/* FOOTER STYLING */
+.footer-font {
+  font-family: "Jost", sans-serif;
+}
+.all-btn {
+  font-family: "Jost", sans-serif;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 18.56px;
+  line-height: 100%;
+  border: 2px solid #000;
+  width: 237px;
+  height: 56px;
+}
+.all-anchor {
+  font-family: "Jost", sans-serif;
+}
+.mail-span {
+  position: relative;
+  font-family: "Jost", sans-serif;
+}
+/* footer contact email  */
+.contact-mail {
+  width: 320px;
+  height: 56px;
+  padding: 10px;
+  border: 0.7px solid #ffffff;
+  border-radius: 5px;
+  font-size: 19px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+}
+::placeholder {
+  color: #fff;
+  font-family: "jost", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+/* styling for arrow icon in footer email, with button as arrow */
+.btn-arr {
+  position: absolute;
+  top: -21px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+/* styling for all anchor-buttons that have arrow icon links  */
+.arrow-btn {
+  position: absolute;
+  top: 4px;
+  right: -15px;
+  padding: 16px 30px 16px 10px;
+  color: black !important;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+}
+/* styling for the a-tag  with arrow icons   */
+.btn-tag {
+  position: relative;
+  width: 90px !important;
+  padding: 16px 40px 16px 10px;
+  color: black !important;
+  text-decoration: none;
+  border: 1px solid #424242;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+}
+.email-btn {
+  position: absolute;
+  top: 24px;
+  right: 1px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.contact-info {
+  font-family: "Nunito Sans", sans-serif;
+}
+/* .fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube {
+    border-radius: 100%;
+    background-color: #fff;
+    padding: 25px 10px;
+} */
+hr {
+  border: 2px solid #fff;
+  width: 100%;
+}
+.copyright {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+}
+/* footer ends here  */
+/* media quary for responsive */
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 0.1rem !important;
+    /* max-width: 100% !important; */
+  }
+  body {
+    max-width: 100% !important;
+  }
+}

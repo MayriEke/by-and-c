@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset CSS for all landing page(index.html) fonts*/
+
+section all styling start here
+.byc-blog {
+    font-family: Jost, sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: #212121;
+}
+.text-h3 {
+    font-family: Noto-Sans, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 100%;
+    color: #212121;
+}
+.text-p {
+    font-family: Noto-Sans, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #424242;
+}
+.btn {
+    font-family: Jost, sans-serif;
+    width: 131px;
+    height: 52px;
+    background-color: #393939;
+    padding: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    color: #020202 ! important;
+    border: 2px solid;
+}
+.wade {
+    font-family: Jost, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: #252424 !important;
+}
+.blog-fashion {
+    font-family: Jost, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    color: #424242;
+}
+sections ends here 
+.pagination li {
+    margin: 0 3px !important;
+    justify-content: center !important;
+    gap: 20px !important;
+}
+BLOG ONE ENDS HERE
+
+MEDIA QUARY FOR BLOG ON
+
+.byc-blog {
+        font-weight: 400px;
+        font-size: 26px;
+    }
+    .text-h3 {
+        font-weight: 300px;
+        font-size: 18px;
+    }
+    .text-p {
+        font-weight: 300px;
+        font-size: 15px;
+    }
+    .text-p br {
+        display: none;
+    }
+
+       /* FOOTER STYLING */
+.footer-font {
+    font-family: "Jost", sans-serif;
+}
+.all-btn {
+    font-family: "Jost", sans-serif;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 18.56px;
+    line-height: 100%;
+    border: 2px solid #000;
+    width: 237px;
+    height: 56px;
+}
+.all-anchor {
+    font-family: "Jost", sans-serif;
+}
+.mail-span {
+    position: relative;
+    font-family: "Jost", sans-serif;
+}
+/* footer contact email  */
+.contact-mail {
+   width: 320px;
+    height: 56px;
+    padding: 10px;
+    border:0.7px  solid #FFFFFF;
+    border-radius: 5px;
+    font-size: 19px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+}
+ ::placeholder {
+    color: #fff;
+    font-family: "jost", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+}
+/* styling for arrow icon in footer email, with button as arrow */
+.btn-arr {
+    position: absolute;
+    top: -21px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/* styling for all anchor-buttons that have arrow icon links  */
+.arrow-btn {
+    position: absolute;
+    top: 4px;
+    right: -15px;
+    padding: 16px 30px 16px 10px;
+    color: black !important;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+}
+/* styling for the a-tag  with arrow icons   */
+.btn-tag {
+    position: relative;
+    width: 90px !important;
+    padding: 16px 40px 16px 10px;
+    color: black !important;
+    text-decoration: none;
+    border: 1px solid #424242;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+}
+.email-btn {
+    position: absolute;
+    top: 24px;
+    right: 1px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.contact-info {
+    font-family: "Nunito Sans", sans-serif;
+}
+/* .fa-facebook, .fa-instagram, .fa-twitter, .fa-youtube {
+    border-radius: 100%;
+    background-color: #fff;
+    padding: 25px 10px;
+} */
+hr {
+    border: 2px solid #fff;
+    width: 100%;
+}
+.copyright {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+}
+/* footer ends here  */
+/* media quary for responsive */
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 0.1rem !important;
+       /* max-width: 100% !important; */
+    }
+    body {
+        max-width:  100% !important;
+    }
+}
