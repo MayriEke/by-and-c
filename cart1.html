@@ -6,9 +6,10 @@
     <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="./about.css">
 </head>
 <body>
+       <!-- NAVBAR SECTION -->
     <nav class="navbar navbar-expand-lg bg-white px-lg-4 py-lg-3">
         <div class="container-fluid">
               <!-- LEFT NAV BAR-->
@@ -26,12 +27,12 @@
             <!-- RIGHT NAV BAR -->
             <div class="d-none d-lg-flex align-items-center">
               <ul class="navbar-nav">
-                  <li class="nav-item "><a class="nav-link" href="about.html">About Us</a></li>
-                  <li class="nav-item mx-lg-1"><a class="nav-link" href="contact.html">Contact</a></li>
+                  <li class="nav-item "><a class="nav-link" href="#">About Us</a></li>
+                  <li class="nav-item mx-lg-1"><a class="nav-link" href="#">Contact</a></li>
               </ul>
               <div class="icon-links d-flex align-items-center">
                   <a href="#"><i class="fas fa-search text-dark mx-lg-3"></i></a>
-                  <a href="#"><i class="far fa-user  text-dark mx-lg-2"></i></a>
+                  <a href="index.html"><i class="far fa-user  text-dark mx-lg-2"></i></a>
                   <a href="#"><i class="far fa-heart text-dark mx-lg-2"></i></a>
                   <a href="#"><i class="fas fa-shopping-cart text-dark mx-lg-2"></i></a>
               </div>
@@ -57,132 +58,218 @@
                 </li>
             </ul>
         </div>
-    </nav>
-    <!-- ABOUT PAGE -->
-    <div class="container pages-nav">
-        <a href="index.html">Home</a>
-        <span>&gt;</span>
-        <a href="about.html">About Us</a> 
+    </nav>        
+            <!-- CART SECTION -->
+    <!-- <section class="product-card row g-4 mt-5"> -->
+    <!-- Left: Product Image + Carousel -->
+    <div class="col-md-6 col-lg-6 text-center">
+      <img src="./images/Image4cart1.png" alt="Product" class=" mb-3" style="width: 100%;">
+
+      <!-- Bootstrap Carousel for thumbnails -->
+       <!-- <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+      <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner d-flex justify-content-center">
+          <div class="carousel-item active">
+            <img src="./images/blue boxer.png" class="mx-1" alt="thumb1">
+            <img src="./images/coffee brown2.png" class="mx-1" alt="thumb2">
+            <img src="./images/blue boxer.png" class="mx-1" alt="thumb3">
+            <img src="./images/coffee brown2.png" class="mx-1" alt="thumb4">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/blue boxer.png" class="mx-1" alt="thumb5">
+            <img src="./images/coffee brown2.png" class="mx-1" alt="thumb6">
+            <img src="./images/blue boxer.png" class="mx-1" alt="thumb7">
+            <img src="./images/coffee brown2.png" class="mx-1" alt="thumb8">
+          </div>
+        </div> -->
+        <!-- Carousel Controls -->
+        <!-- <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button> -->
+      <!-- </div> -->
     </div>
-    <!-- About Us Content -->
-     <div class="top">
-        <h1>ABOUT US</h1>
-     </div>
-     <section class="container">
-        <div class="row card1">
-            <div class="frame178 col-sm-12 col-md-6 col-lg-6 mt-5">
-                <img class="img-fluid" src="./images/Frame 178.png" alt="frame178">
-            </div>
 
-            <div class="aboutbyc col-sm-12 col-md-6 col-lg-6">
-                <h3>ABOUT BYC AFRICA</h3>
-                <p>We are the sole distributor of BYC products in<br> Africa. We import BYC products from Korea<br> and distribute them to African countries<br> through Onamik Holdings Limited.</p>
-            </div>
-        </div>
-     </section>
-     <!-- RECORDS SECTION -->
-      <div class="records">
-        <h1>WHAT OUR RECORD SAYS</h1>
+    <!-- Right: Product Info -->
+    <div class="col-md-6">
+      <h5 class="fw-bold">MEN BOXERS</h5>
+      <p class="text-muted fw-bold">BYC 1166</p>
+      <p class="text-dark mb-1">100% Cotton 12 Pieces Of Mens Boxer</p>
+
+      <!-- Ratings -->
+      <p class="text-warning mb-1">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <span class="text-dark ms-2">4.05</span>
+      </p>
+      <hr>
+
+      <!-- Price -->
+      <div class="price">₦2,800.00</div>
+
+      <!-- Sizes -->
+      <div class="sizes mb-3">
+        <p class="fw-bold">Available Sizes</p>
+        <button class="btn btn-outline-dark btn-sm">S</button>
+        <button class="btn btn-outline-dark btn-sm">M</button>
+        <button class="btn btn-outline-dark btn-sm">L</button>
+        <button class="btn btn-outline-dark btn-sm">XL</button>
       </div>
-      <section class="container record-cards">
-        <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card card-hover" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./images/dashicons_awards.png" alt="dashicon">
-                        <p class="card-text">Gold Prize for the Best Listed Firm awarded <br> by Daesin Economy Research Institute.</p>
-                        <h5 id="record-years">Year 1990</h5>
-                    </div>
-                </div>
-            </div>
-        
-        
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card card-hover" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./images/dashicons_awards.png" alt="dashicon">
-                        <p class="card-text">Selected as representaive enterprise of Korea for<br> successful stategies on globalization of Korean brands<br> by Korean Traders Association.</p>
-                        <h5 id="record-years">Year 1993</h5>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card card-hover" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./images/dashicons_awards.png" alt="dashicon">
-                        <p class="card-text">BYC' selected as the most preferred brand for<br> underwear by the Federation of Korean Women<br> Economists..</p>
-                        <h5 id="record-years">Year 1997</h5>
-                    </div>
-                </div>
-            </div>
+      <!-- Colors -->
+      <div class="colors mb-3">
+        <p class="fw-bold">Available Colours</p>
+        <span class="blue"></span>
+        <span class="purple"></span>
+        <span class="pink"></span>
+        <span class="black"></span>
+        <span class="orange"></span>
+      </div>
+
+      <!-- Quantity + Wishlist -->
+      <div class="d-flex align-items-center mb-3">
+        <div class="quantity-control d-flex align-items-center">
+          <button class="btn btn-danger"><i class="fa-solid fa-minus"></i></button>
+          <span class="px-3">1</span>
+          <button class="btn btn-danger"><i class="fa-solid fa-plus"></i></button>
         </div>
 
-        <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card card-hover" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./images/dashicons_awards.png" alt="dashicon">
-                        <p class="card-text">Selected as the official commercializer of underwear for<br> 1988 France Worldcup.</p>
-                        <h5 id="record-years">Year 1997</h5>
-                    </div>
-                </div>
-            </div>
+        <button class="btn wishlist-btn ms-3">
+          <i class="fa-regular fa-heart"></i> Wishlist
+        </button>
+      </div>
 
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card card-hover" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./images/dashicons_awards.png" alt="dashicon">
-                        <p class="card-text">The Prize for Export of Original Brands awarded as<br> recommended by the Korean Assoiatioon of Textile<br>Industries</p>
-                        <h5 id="record-years">Year 1999</h5>
-                    </div>
-                </div>
-            </div>
+      <!-- Add to Cart -->
+      <button class="btn btn-danger" style="width: 100%;">
+        <i class="fa-solid fa-cart-shopping me-2"></i> Add to Cart
+      </button>
+    </div>
+  </section>
 
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card card-hover" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./images/dashicons_awards.png" alt="dashicon">
-                        <p class="card-text">"The 10th Prize for the Enterprise of Economical<br> Justice" by the enterprise Assessment commission.</p>
-                        <h5 id="record-years">Year 2001</h5>
-                    </div>
-                </div>
-            </div>
+  <section class="my-5 px-lg-5 px-md-3 px-2">
+    <div class="card" style="border: 2px solid #f1eeeee4; ; box-shadow: #e7e6e63d 0px 3px 8px;">
+        <div class="card-body">
+            <h5 class="fw-bold">Product Description</h5>
+            <hr style="border: 2px solid #f1eeeee4; background-color: #1E1D1D; box-shadow: #e7e6e63d 0px 3px 8px;">
+            <img src="./images/description text.png" alt="Fashion" style="width: 100%;">
         </div>
+    </div>
+      <!-- Customer review section -->
+    
+        <section class="card cust-review mt-5">
+            <div class="card-body">
+                <h5 class="fw-bold">Customer Reviews</h5>
+                <hr style="border: 2px solid #f1eeeee4; background-color: #1E1D1D; box-shadow: #e7e6e63d 0px 3px 8px;">
+                <p>PRODUCT RATINGS (1129)</p>
+            </div>
+            
+            <div class="ratess">
+                <div class="card text-center rate-card" style="width: 18rem; height: 11rem; justify-content: center;">
+                    <h2 class="mt-3">4.5/5.0</h2>
+                    <div class="5-star mt-2 my-lg-4">
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-regular fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="rating">4.05</span>
+                    </div>
+                </div>
+                <div class="text-center rate-view" style="width: 18rem; height: 10rem; ">
+                    <div class="rating-row rate-row">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5</span>
+                        <div class="progress">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                    </div>
 
-        <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card card-hover" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./images/dashicons_awards.png" alt="dashicon">
-                        <p class="card-text">The Prize for Export of Original Brands awarded as<br> recommended by the Korean Assoiatioon of Textile<br> Industries</p>
-                        <h5 id="record-years">Year 2006</h5>
+                    <div class="rating-row rate-row">
+                        <i class="fa-solid fa-star"></i>
+                        <span>4</span>
+                        <div class="progress">
+                        <div class="progress-bar" style="width: 65%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="rating-row rate-row">
+                        <i class="fa-solid fa-star"></i>
+                        <span>3</span>
+                        <div class="progress">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="rating-row rate-row">
+                        <i class="fa-solid fa-star"></i>
+                        <span>2</span>
+                        <div class="progress">
+                        <div class="progress-bar" style="width: 35%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="rating-row rate-row">
+                        <i class="fa-regular fa-star"></i>
+                        <span>1</span>
+                        <div class="progress">
+                        <div class="progress-bar" style="width: 25%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card card-hover" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./images/dashicons_awards.png" alt="dashicon">
-                        <p class="card-text">selected by korea management association as no.1<br> in brand influence among the men's underwear<br> companies</p>
-                        <h5 id="record-years">Year 2006</h5>
-                    </div>
-                </div>
+            <div class="d-flex justify-content-between align-items-center mt-lg-5 mb-lg-3 pt-4 pt-lg-5 pb-2 pb-lg-1 ">
+                <h4 class="px-3">PRODUCT REVIEWS (438)</h4>
+                <a href="" class="text-decoration-none fw-1 fs-5 px-3" style="color: #BD3A3A;">
+                    See all<span><i class="fa-solid fa-angle-left fa-flip-horizontal ms-3" style="color: #BD3A3A;"></i></span>
+                </a>
             </div>
+            <hr style="border: 2px solid #f1eeeee4; background-color: #1E1D1D; box-shadow: #e7e6e63d 0px 3px 8px;">
+            <div class="prod-review px-3">
+                <p style="font-weight: bold; font-size: 16px;">Good product</p>
+                <p style="font-size: 14px;">The product lasts, the design is perfect I love it</p>
+                    <div class="5-star mt-2 my-lg-4">
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-regular fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="rating" style="font-size: 12px; margin-left: 34px;">12-08-2021 by JAMES JOHN</span>
+                    </div>
+            </div>
+            <hr style="border: 2px solid #f1eeeee4; background-color: #1E1D1D; box-shadow: #e7e6e63d 0px 3px 8px;">
+            <div class="prod-review px-3">
+                <p style="font-weight: bold; font-size: 16px;">Good product</p>
+                <p style="font-size: 14px;">The product lasts, the design is perfect I love it</p>
+                    <div class="5-star mt-2 my-lg-4">
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-regular fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="rating" style="font-size: 12px; margin-left: 34px;">12-08-2021 by JAMES JOHN</span>
+                    </div>
+            </div>
+            <hr style="border: 2px solid #f1eeeee4; background-color: #1E1D1D; box-shadow: #e7e6e63d 0px 3px 8px;">
+            <div class="prod-review px-3">
+                <p style="font-weight: bold; font-size: 16px;">Looks nice</p>
+                <p style="font-size: 14px;">The product lasts, the design is perfect I love it</p>
+                    <div class="5-star mt-2 my-lg-4">
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-solid fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="star"><i class="fa-regular fa-star fa-10xs" style="color: #FB8200;"></i></span>
+                        <span class="rating" style="font-size: 12px; margin-left: 34px;">12-08-2021 by JAMES JOHN</span>
+                    </div>
+            </div>
+        </section>
 
-            <div class="col-sm-12 col-md-4 col-lg-4">
-                <div class="card card-hover" style="width: 18rem;">
-                    <div class="card-body">
-                        <img src="./images/dashicons_awards.png" alt="dashicon">
-                        <p class="card-text">Selected as the Best Korean Enterprise of 1992 by<br> Korean Management Association.</p>
-                        <h5 id="record-years">Year 2011</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-    <section class="about-sec3 px-3 mt-lg-5">
+        <section class="about-sec3 px-3 mt-lg-5">
             <div class="d-flex justify-content-between align-items-center mt-lg-5 mb-lg-3 pt-4 pt-lg-5 pb-2 pb-lg-1 ">
                 <h4 class="">Recently Viewed</h4>
                 <a href="" class="text-decoration-none fw-1 fs-5" style="color: #BD3A3A;">
@@ -289,16 +376,21 @@
             </div>
         </section>
 
-           <!-- FOOTER SECTION -->
+    
+
+
+    
+  </section>
+     <!-- FOOTER SECTION -->
         <footer class=" mt-5 py-4 pb-2 px-3 footer-font" style="background-color: #212121;">
         <section class="container pt-lg-5 mt-lg-5 py-md-3 text-light">
             <section class="row">
             <div class="col-sm-12 col-md-6 mb-4 col-lg-2 mb-md-0">
                 <h5 class="text-captalize mb-lg-3">Company Info </h5>
                 <ul class="list-unstyled text-light">
-                <li class="my-lg-2"><a href="#" class="text-light " style="text-decoration: none; ">About Us</a></li>
+                <li class="my-lg-2"><a href="about.html" class="text-light " style="text-decoration: none; ">About Us</a></li>
                 <li><a href="#" class="text-light" style="text-decoration: none;">Affiliate</a></li>
-                <li class="my-lg-2"><a href="#" class="text-light"style="text-decoration: none;">Fashion Blogger</a></li>
+                <li class="my-lg-2"><a href="blog.html" class="text-light"style="text-decoration: none;">Fashion Blogger</a></li>
                 </ul>
             </div>
             <div class="col-sm-12 col-md-6 mb-4 col-lg-2 mb-md-0">
@@ -353,6 +445,10 @@
             </section>
         </section>
     </footer>
+
+           <!-- FOOTER SECTION -->
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
