@@ -200,7 +200,6 @@ LANDING PAGE
   gap: 2rem;
 }
 .rate-card {
-  /* margin: 10px; dont forget to uncomment after flexing to be sure it contains the space*/
   margin-top: 10px !important;
   margin-left: 12px;
   margin-bottom: 16px;
@@ -234,6 +233,92 @@ LANDING PAGE
 .prod-review {
   font-family: "Nato Sans", sans-serif;
 }
+
+/* CART2 STYLING */
+.cart-card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 20px;
+      background: #fff;
+    }
+    .cart-item {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+    .cart-item img {
+      width: 100px;
+      border-radius: 5px;
+    }
+    .btn-wishlist {
+      border: 1px solid #dc3545;
+      color: #dc3545;
+      font-size: 14px;
+    }
+    .btn-wishlist:hover {
+      background: #dc3545;
+      color: #fff;
+    }
+    .btn-remove {
+      background: #dc3545;
+      color: #fff;
+      font-size: 14px;
+    }
+    .btn-remove:hover {
+      background: #bb2d3b;
+    }
+    .quantity-box {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .quantity-box button {
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ddd;
+      background: #fff;
+      font-size: 18px;
+    }
+    .quantity-box button:hover {
+      background: #BD3A3A;
+      color: #fff;
+    }
+    .quantity-box input {
+      width: 40px;
+      text-align: center;
+      border: 1px solid #ddd;
+      height: 30px;
+    }
+    .cart-totals {
+      margin-top: 20px;
+      margin-left: 600px;
+      padding: 20px;
+      border: none;
+      border-radius: 8px;
+      background: #fff;
+    }
+    .cart-totals h5 {
+      margin-bottom: 20px;
+    }
+    .cart-totals .d-flex {
+      margin-bottom: 10px;
+    }
+    .btn-continue {
+      border: 1px solid #dc3545;
+      color: #dc3545;
+      margin-right: 10px;
+    }
+    .btn-continue:hover {
+      background: #dc3545;
+      color: #fff;
+    }
+    .btn-checkout {
+      background: #dc3545;
+      color: #fff;
+    }
+    .btn-checkout:hover {
+      background: #bb2d3b;
+    }
 
 @media screen and (max-width: 600px) {
   .sec1 {
@@ -358,6 +443,56 @@ LANDING PAGE
     width: 100%; /* Fills the card width */
     padding: 9px;
   }
+
+    /* CONTACT US */
+.drop {
+        font-size: 38px !important;
+        text-align: center;
+    }
+ .contact {
+        margin-left: 120px !important;
+        font-size: 20px;
+    }
+
+    .about_form_input{
+        width: 100% !important;
+    }
+
+    .about_note_input{
+                width: 100% !important;
+                height: 80px !important;
+
+    }
+
+    .submit-btn  {
+        width: 99% !important;
+        align-items: center;
+        margin-left: 2px;
+   
+    }
+
+    button.wishlist_btn{
+        width: 320% !important;
+        margin-bottom: 20px !important;
+        margin-top: 20px;
+    }
+
+    button.buy_now_btn{
+        width: 320% !important;
+    }
+
+  div.btn-group{
+    margin-top: 20px !important;
+  }
+
+  button.btn.btn-toggle.active,button.btn.btn-toggle.inactive{
+    margin-bottom: 1px;
+  }
+
+  h4.pt-sm-5.mt-sm-5{
+    margin-top: 40px;
+  }
+
   /* CART1 RESPONSIVENESS */
   .ratess {
     flex-direction: column;
@@ -368,6 +503,7 @@ LANDING PAGE
   }
 }
 
+/* NORMAL CSS FOR ABOUT PAGE */
 /* ABOUT PAGE STYLING */
 .top {
   text-align: center;
@@ -581,7 +717,7 @@ RECENTLY VIEWED .about-sec3 {
     margin-right: 12rem;
   }
 
-  all products .card-aboutUs img {
+  .all-products .card-aboutUs img {
     width: 100%;
   }
 }
