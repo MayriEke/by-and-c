@@ -58,76 +58,61 @@
             </ul>
         </div>
     </nav>
-       
-
-    <!-- Log-in Section -->
-    <div class="container py-5">
-    <div class="row border rounded p-4 bg-white">
-      <div class="col-lg-6 border-end">
-        <h3 class="text-center mb-4 fw-bold">Login</h3>
-        <form>
-          <div class="mb-3">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" placeholder="E-mail" required style="border-color: #BD3A3A;">
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password" minlength="4" required style="border-color: #BD3A3A;">
-          </div>
-          <div class="pass d-flex justify-content-between align-items-center mb-3">
-            <div>
-              <input type="checkbox" id="remember" style="transform: scale(1.9); margin-right: 11px;"  >
-              <label for="remember" class="ms-1 ">Remember me</label>
-            </div>
-            <div>
-                <a href="#" class="text-decoration-none text-black">Forgot your password?</a>
-            </div>
-          </div>
-                 
-          <button type="submit" class="btn w-100" style="background-color:#BD3A3A; color:white;">LOGIN</button>
-                  <!-- REGISTER IF NO ACCOUNT -->
-          <div class="pass d-flex justify-content-between align-items-center mb-3">
-            <div>
-              <div>
-                <p class="text-decoration-none text-black">Don't have an account?</p>
-            </div>
-            </div>
-            <div>
-                <a href="#" class="text-decoration-none text-black me-2">Register here</a>
-            </div>
-          </div>
-        </form>
-      </div>
                   <!-- Create Account Section -->
-      <div class="col-lg-6 border-end">
-        <h3 class="text-center mb-4 fw-bold">Create Your Account</h3>
-        <form>
+    <div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+        <div class="card shadow-lg rounded-4 border-0 w-100" style="max-width: 480px;">
+            <div class="card-body p-4">
+            <h3 class="text-center mb-4 fw-bold">Create Your Account</h3>
+
+            <form id="signupForm">
+                <div class="mb-3">
+                    <label for="Name" class="form-label fw-semibold">Full Name</label>
+                    <input type="text" class="form-control border-danger" id="Name" placeholder="Enter full name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Email" class="form-label fw-semibold">E-mail</label>
+                    <input type="email" class="form-control border-danger" id="Email" placeholder="Enter email" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="Password" class="form-label fw-semibold">Password</label>
+                    <input type="password" class="form-control border-danger" id="Password" placeholder="Enter password" minlength="4" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="ConfirmPassword" class="form-label fw-semibold">Confirm Password</label>
+                    <input type="password" class="form-control border-danger" id="ConfirmPassword" placeholder="Confirm password" required>
+                </div>
+                <button type="submit" class="btn btn-danger w-100 fw-semibold" onclick="custSignup(event)">Register</button>
+            </form>
+        </div>
+    </div>
+    </div>
+        <!-- <h3 class="text-center mb-4 fw-bold">Create Your Account</h3> -->
+        <!-- <form class="container w-50 mb-5">
           <div class="mb-3">
-            <label for="fullname" class="form-label">Full name</label>
-            <input type="fullname" class="form-control" id="email" placeholder="fullname " required style="border-color: #BD3A3A;">
+            <label for="Name" class="form-label">Full name</label>
+            <input type="Name" class="form-control" id="Name" placeholder="fullame " required style="border-color: #BD3A3A;">
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email" placeholder="E-mail" required style="border-color: #BD3A3A;">
+            <input type="email" class="form-control" id="Email" placeholder="E-mail" required style="border-color: #BD3A3A;">
           </div>
           <div class="mb-3">
             <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" placeholder="Password" minlength="4" required style="border-color: #BD3A3A;">
+            <input type="password" class="form-control" id="Password" placeholder="Enter Your Password" minlength="4" required style="border-color: #BD3A3A;">
           </div>
           <div class="mb-3">
             <label for="confirm" class="form-label">Confirm password</label>
-            <input type="confirm" class="form-control" id="email" placeholder="confirm password" required style="border-color: #BD3A3A;">
+            <input type="confirm" class="form-control" id="ConfirmPassword" placeholder="confirm password" required style="border-color: #BD3A3A;">
           </div>
           
-          <button type="submit" class="btn w-100" style="background-color:#BD3A3A; color:white;">Register</button>
-        </form>
-      </div>
-    </div>
-    </div>  
-    <!-- END OF LOG-IN SECTION -->
+          <button type="submit" class="btn w-100" style="background-color:#BD3A3A; color:white;" onclick="custSignup(event)">Register</button>
+        </form> -->
 
         <!-- FOOTER SECTION -->
-     <footer class=" mt-5 py-4 pb-2 px-3 footer-font" style="background-color: #212121;">
+        <footer class=" mt-5 py-4 pb-2 px-3 footer-font" style="background-color: #212121;">
         <section class="container pt-lg-5 mt-lg-5 py-md-3 text-light">
             <section class="row">
             <div class="col-sm-12 col-md-6 mb-4 col-lg-2 mb-md-0">
@@ -189,10 +174,12 @@
             </div>
             </section>
         </section>
-    </footer>
+        </footer>   
   
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
