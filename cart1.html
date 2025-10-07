@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./about.css">
 </head>
-<body>
+<body onload="initProductDetails(), loadRecentlyViewed()">
        <!-- NAVBAR SECTION -->
     <nav class="navbar navbar-expand-lg bg-white px-lg-4 py-lg-3">
         <div class="container-fluid">
@@ -34,7 +34,7 @@
                   <a href="#"><i class="fas fa-search text-dark mx-lg-3"></i></a>
                   <a href="index.html"><i class="far fa-user  text-dark mx-lg-2"></i></a>
                   <a href="#"><i class="far fa-heart text-dark mx-lg-2"></i></a>
-                  <a href="#"><i class="fas fa-shopping-cart text-dark mx-lg-2"></i></a>
+                  
               </div>
             </div>
             <!-- Mobile Toggler -->
@@ -54,13 +54,24 @@
                   <a href="#"><i class="fas fa-search text-dark d-lg-none"></i></a>
                   <a href="#"><i class="far fa-user text-dark d-lg-none"></i></a>
                   <a href="#"><i class="far fa-heart text-dark d-lg-none"></i></a>
-                  <a href="#"><i class="fas fa-shopping-cart text-dark d-lg-none"></i></a>
+                  <a href="#"><i class="fas fa-shopping-cart text-dark mx-lg-2"></i>
+                    <span id="cart-count" class="badge bg-danger rounded-pill position-absolute d-none">0
+                    </span>
+                  </a>
                 </li>
             </ul>
         </div>
     </nav>        
             <!-- CART SECTION -->
-    <section class="product-card row g-4 mt-5">
+
+    <section id="product-details">
+        <div class="row">
+            <div id="productItem"></div>
+        </div>
+    </section>
+
+
+    <section class="product-card row d-none g-4 mt-5">
     
     <div class="col-md-6 col-lg-6 text-center">
       <img src="./images/Image4cart1.png" alt="Product" class=" mb-3" style="width: 100%;">
@@ -144,9 +155,9 @@
       </div>
 
       <!-- Add to Cart -->
-      <button class="btn btn-danger" style="width: 100%;">
-        <i class="fa-solid fa-cart-shopping me-2"></i> Add to Cart
-      </button>
+        <button class="btn btn-danger addCartBtn" style="width: 100%;" data-id="{{product._id}}">
+            <i class="fa-solid fa-cart-shopping me-2"></i> Add to Cart
+        </button>
     </div>
   </section>
 
@@ -224,7 +235,7 @@
 
             <div class="d-flex justify-content-between align-items-center mt-lg-5 mb-lg-3 pt-4 pt-lg-5 pb-2 pb-lg-1 ">
                 <h4 class="px-3">PRODUCT REVIEWS (438)</h4>
-                <a href="" class="text-decoration-none fw-1 fs-5 px-3" style="color: #BD3A3A;">
+                <a href="products.html" class="text-decoration-none fw-1 fs-5 px-3" style="color: #BD3A3A;">
                     See all<span><i class="fa-solid fa-angle-left fa-flip-horizontal ms-3" style="color: #BD3A3A;"></i></span>
                 </a>
             </div>
@@ -268,115 +279,16 @@
                     </div>
             </div>
         </section>
+    </section>
             
         <!-- RECENTLY VIEWED -->
-        <section class="about-sec3 px-3 mt-lg-5">
-            <div class="d-flex justify-content-between align-items-center mt-lg-5 mb-lg-3 pt-4 pt-lg-5 pb-2 pb-lg-1 ">
-                <h4 class="">Recently Viewed</h4>
-                <a href="" class="text-decoration-none fw-1 fs-5" style="color: #BD3A3A;">
-                    See all<span><i class="fa-solid fa-angle-left fa-flip-horizontal ms-3" style="color: #BD3A3A;"></i></span>
-                </a>
-            </div>
-            <hr style="border: 2px solid #f1eeeee4; background-color: #1E1D1D; box-shadow: #e7e6e63d 0px 3px 8px;">
-            <div class="row row-cols-lg-5">
-                <div class="col-sm-12  product-card1">
-                    <div class="card-aboutUs mb-3 mb-lg-0 w-100" > <!--style=" width: 30rem;"-->
-                        <img src="./images/Frame 71.png" class="img-fluid rounded-top" alt="...">
-                        <div class="card-body ps-lg-2 my-lg-4 ps-2 my-2">
-                            <h3 class="card-text mt-2 mt-lg-4">MEN BOXERS<h3>
-                            <p class="text-p">BYC 1163</p>
-                            <p class="men-fash">Fashionable Men's Underwear Boxer <br> Cotton Underwear 3 In 1</p>
-                            <p class="mt-2 mt-lg-3 price">₦1,900</p>
-                            <div class="5-star mt-2 my-lg-4">
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-regular fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="rating">4.05</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12  product-card2">
-                    <div class="card-aboutUs mb-3 mb-lg-0 w-100" > <!--style=" width: 30rem;"-->
-                        <img src="./images/Frame 71.png" class="img-fluid rounded-top" alt="...">
-                        <div class="card-body ps-lg-2 my-lg-4 ps-2 my-2">
-                            <h3 class="card-text mt-2 mt-lg-4">MEN BOXERS<h3>
-                            <p class="text-p">BYC 1163</p>
-                            <p class="men-fash">Fashionable Men's Underwear Boxer <br> Cotton Underwear 3 In 1</p>
-                            <p class="mt-2 mt-lg-3 price">₦1,900</p>
-                            <div class="5-star mt-2 my-lg-4">
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-regular fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="rating">4.05</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12  product-card3">
-                    <div class="card-aboutUs mb-3 mb-lg-0 w-100" > <!--style=" width: 30rem;"-->
-                        <img src="./images/Frame 71.png" class="img-fluid rounded-top" alt="...">
-                        <div class="card-body ps-lg-2 my-lg-4 ps-2 my-2">
-                            <h3 class="card-text mt-2 mt-lg-4">MEN BOXERS<h3>
-                            <p class="text-p">BYC 1163</p>
-                            <p class="men-fash">Fashionable Men's Underwear Boxer <br> Cotton Underwear 3 In 1</p>
-                            <p class="mt-2 mt-lg-3 price">₦1,900</p>
-                            <div class="5-star mt-2 my-lg-4">
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-regular fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="rating">4.05</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12  product-card4">
-                    <div class="card-aboutUs mb-3 mb-lg-0 w-100" > <!--style=" width: 30rem;"-->
-                        <img src="./images/Frame 71.png" class="img-fluid rounded-top" alt="...">
-                        <div class="card-body ps-lg-2 my-lg-4 ps-2 my-2">
-                            <h3 class="card-text mt-2 mt-lg-4">MEN BOXERS<h3>
-                            <p class="text-p">BYC 1163</p>
-                            <p class="men-fash">Fashionable Men's Underwear Boxer <br> Cotton Underwear 3 In 1</p>
-                            <p class="mt-2 mt-lg-3 price">₦1,900</p>
-                            <div class="5-star mt-2 my-lg-4">
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-regular fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="rating">4.05</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-12  product-card5">
-                    <div class="card-aboutUs mb-3 mb-lg-0 w-100" > <!--style=" width: 30rem;"-->
-                        <img src="./images/Frame 71.png" class="img-fluid rounded-top" alt="...">
-                        <div class="card-body ps-lg-2 my-lg-4 ps-2 my-2">
-                            <h3 class="card-text mt-2 mt-lg-4">MEN BOXERS<h3>
-                            <p class="text-p">BYC 1163</p>
-                            <p class="men-fash">Fashionable Men's Underwear Boxer <br> Cotton Underwear 3 In 1</p>
-                            <p class="mt-2 mt-lg-3 price">₦1,900</p>
-                            <div class="5-star mt-2 my-lg-4">
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-solid fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="star"><i class="fa-regular fa-star fa-2xs" style="color: #FB8200;"></i></span>
-                                <span class="rating">4.05</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section>
+            <h4>Recently Viewed</h4>
+            <div id="recentlyViews" class="row"></div>
+            <button id="viewMoreRecent" class="btn btn-outline-primary mt-3" style="display:none;">
+                View More
+            </button>
         </section>
-  </section>
      <!-- FOOTER SECTION -->
         <footer class=" mt-5 py-4 pb-2 px-3 footer-font" style="background-color: #212121;">
         <section class="container pt-lg-5 mt-lg-5 py-md-3 text-light">
@@ -448,5 +360,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>

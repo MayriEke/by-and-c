@@ -1,0 +1,69 @@
+<nav class="navbar navbar-expand-lg mb-5 mb-lg-5 pb-lg-5">
+        <div class="container-fluid mt-2">
+              <!-- Left UL LI -->
+                <div class="d-none d-lg-flex">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link font-seog" href="./allProducts.html">Shop Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./blog_home.html">FAQ</a></li>
+                    </ul>
+                </div>
+            <!-- BYC LOGO (Center) -->
+             <a class="navbar-brand mx-lg-auto" href="./index.html">
+              <img src="./images/BYC LOGO JPG FILE 1.png" alt="BYC Logo">
+            </a>
+            <!-- Right Menu -->
+            <div class="d-none d-lg-flex align-items-center ">
+              <ul class="navbar-nav gap-2">
+                  <li class="nav-item "><a class="nav-link abbt" href="./aboutUs.html">About Us</a></li>
+                  <li class="nav-item "><a class="nav-link abbt" href="./contact.html">Contact</a></li>
+              </ul>
+              <div class="icon-links d-flex align-items-center ">
+                  <a href="#"><i class="fas fa-search mx-lg-1"></i></a>
+                  <a href="./signUp.html" ><i class="fa-solid fa-user-plus mx-lg-2" id="loggedOut"></i></a>
+                  <a href="" class="user-login" id="loggedIn">
+                    <i class="fa-solid fa-user mx-lg-1 " id="loggedIn">
+                      <span class="status-dot"></span>
+                    </i>
+                  </a>
+                  <a href="./wishlist.html"><i class="far fa-heart mx-lg-2 me-lg-4" id="fa-heart"></i></a>
+                  <a href="./cart.html"  class="cart-icon">
+                     <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                </a>
+              </div>
+            </div>
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+          <!-- Mobile Menu -->
+        <div class="collapse navbar-collapse mt-3" id="mobileMenu">
+            <ul class="navbar-nav text-start ps-3">
+                <li class="nav-item d-lg-none"><a class="nav-link" href="./allProducts.html">Shop Products</a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link" href="./blog.html">Blog</a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link" href="./blog_home.html">FAQ</a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link" href="./aboutUs.html">About Us</a></li>
+                <li class="nav-item d-lg-none"><a class="nav-link" href="./contact.html">Contact</a></li>
+                <li class="nav-item d-flex justify-content-start  gap-3 mt-1 text-start">
+                  <!-- <a href="#" class="d-lg-none"><i class="fas fa-search text-dark"></i></a>
+                  <a href="./signUp.html" class="d-lg-none"><i class="fa-solid fa-user-plus mx-lg-2 regIcon"></a>
+                  <a href="./wishlist.html" class="d-lg-none"><i class="far fa-heart text-dark"></i></a>
+                  <a href="./cart.html" class="d-lg-none"><i class="fas fa-cart-shopping text-dark"></i></a> -->
+                  <a href="" class="d-lg-none"><i class="fas fa-search text-dark"></i></a>
+                  <a href="./signUp.html" class="d-lg-none"><i class="fa-solid fa-user-plus mx-lg-2 regIcon text-dark" id="loggedOut"></i></a>
+                  <a href="" class="user-login" id="loggedIn">
+                    <i class="fa-solid fa-user mx-lg-2 " id="loggedIn">
+                      <span class="status-dot"></span>
+                    </i>
+                  </a>
+                  <a href="wishlist.html" class="d-lg-none"><i class="far fa-heart text-dark" id="fa-heart"></i></a>
+                  <a href="./cart.html"  class="cart-icon d-lg-none">
+                     <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
