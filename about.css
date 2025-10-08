@@ -1041,6 +1041,10 @@ hr {
     /* max-width: 100% !important; */
   }
   body {
-    max-width: 100% !important;
+    width: 100% !important;
   }
+  .rowss {
+    display: block;
+  }
+  
 }

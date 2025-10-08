@@ -784,14 +784,14 @@ function loadRecentlyViewed(limit = 5) {
     let html = "";
     displayedItems.forEach(product => {
         html += `
-            <div class="col  mb-4 pe-lg-0">
+            <div class="col mb-4 pe-lg-0">
                 <div class="card">
-                    <img src="${product.image}" class="image-fluid" class="image-fluid" style="width: 100%; height: 350px;object-fit: cover; " alt="${product.name}">
-                    <div class="card-bod pt-3" style="height: 320px ">
-                        <h6 class="card-text mb-1">${product.name}</h6>
-                        <p class="text-p">${product.productNumber}</p>
-                        <p class="men-fash">${product.description}</p>
-                        <p class="mt-2 mt-lg-3 price">${product.price}</p>
+                    <img src="${product.image}" class="img-fluid" style="width: 100%; height: 350px; object-fit: cover;" alt="${product.name}">
+                    <div class="card-bod pt-3 mx-2" style="height: 286px ">
+                        <h6 class="card-text  mb-1" style="font-weight: bold; font-size: 18px">${product.name}</h6>
+                        <p class="text-p" style="font-size: 13px;">${product.productNumber}</p>
+                        <p class="men-fash" style="font-weight: 300;">${product.description}</p>
+                        <p class="mt-2 mt-lg-3 price" style="font-size: 16px">${product.price}</p>
                         <div class="rating mb-4 mt-4" style="color: #FB8200;">${product.rating}<strong class="ms-5 text-dark">4.05</strong></div>
                     </div>
                 </div>
