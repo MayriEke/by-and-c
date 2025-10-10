@@ -462,7 +462,7 @@ input {
 }
 
 /* Right Section (Payment) */
-.payment-option {
+/* .payment-option {
   border: 1px solid #eee;
   padding: 12px;
   border-radius: 6px;
@@ -472,7 +472,7 @@ input {
 
 .payment-option input {
   margin-right: 8px;
-}
+} */
 
 .place-order {
   width: 100%;
@@ -503,6 +503,10 @@ input {
   line-height: 1.4;
 }
 
+   /* MACBOOK STYLING */
+.cards-body h3 {
+  font-size: 8px;
+}
 @media screen and (max-width: 600px) {
   .sec1 {
     margin-top: 50px;

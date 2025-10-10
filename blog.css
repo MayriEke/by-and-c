@@ -28,12 +28,12 @@ section all styling start here
     font-family: Jost, sans-serif;
     width: 131px;
     height: 52px;
-    background-color: #393939;
+    background-color: #a02f2f;
     padding: 16px;
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
-    color: #020202 ! important;
+    color: white ! important;
     border: 2px solid;
 }
 .wade {
@@ -57,8 +57,6 @@ sections ends here
     gap: 20px !important;
 }
 BLOG ONE ENDS HERE
-
-MEDIA QUARY FOR BLOG ON
 
 .byc-blog {
         font-weight: 400px;

@@ -917,3 +917,66 @@ function loadWishlist() {
 
 
 
+// CUSTOMER CHECKOUT SECTION
+function custCheckOut(event) {
+  event.preventDefault();
+
+  const getName = document.getElementById("name").value;
+  const getCompany = document.getElementById("company").value;
+  const getCountry = document.getElementById("country").value;
+  const getTown = document.getElementById("town").value;
+  const getState = document.getElementById("state").value;
+  const getPhone = document.getElementById("phone").value;
+  const getEmail = document.getElementById("email").value;
+
+
+  if (getName === "" || getCompany === "" || getCountry === "" || getTown === "" || getState === "" || getPhone === "" || getEmail === "") {
+    Swal.fire({
+      icon: 'info',
+      text: 'All fields are required!',
+      confirmButtonColor: "#BD3A3A"
+    });
+    return;
+  }
+
+  const checkData = {
+    name: getName,
+    company: getCompany,
+    country: getCountry,
+    cityTown: getTown,
+    state: getState,
+    phone: getPhone,
+    email: getEmail
+  };
+  const checkMethod = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(checkData)
+  };
+
+  const url = "http://localhost:3001/byc/api/customer";
+  fetch(url,checkMethod)
+  .then(res => res.json())
+  .then(result => {
+    console.log(result);
+
+    Swal.fire({
+        icon: 'success',
+        text: 'Proceed to payment',
+        confirmButtonColor: "#BD3A3A"
+      });
+      setTimeout(() => {
+        location.href = "payment.html";
+      }, 2000);
+  })
+  .catch(err => {
+    console.error("Error", err);
+    Swal.fire({
+        icon: 'error',
+        text: 'Something went wrong! Try again later',
+        confirmButtonColor: "#BD3A3A"
+    });
+  })
+}
